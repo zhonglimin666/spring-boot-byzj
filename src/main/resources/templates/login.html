@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+    <header class="loginHeader">
+        <h1>超市订单管理系统</h1>
+    </header>
+        <form class="loginForm" action="/login" name="actionForm" id="actionForm"
+              method="get">
+            <div class="info"></div>
+            <div class="inputbox">
+                <label for="userCode">用户名：</label>
+                <input type="text" class="input-text" id="userCode"
+                       name="name" placeholder="请输入用户名" required value="admin"/>
+            </div>
+            <div class="inputbox">
+                <label for="userPassword">密码：</label>
+                <input type="password" id="userPassword" name="password"
+                       placeholder="请输入密码" required value="1234567"/>
+            </div>
+            <div class="subBtn">
+                <input type="submit" value="登录"/>
+                <input type="reset" value="重置"/>
+            </div>
+        </form>
+</body>
+</html>
